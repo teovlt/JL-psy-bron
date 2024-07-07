@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logo.svg'
 import { MdMenu } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,9 +17,17 @@ const Navbar = () => {
         <h2>Jean-louis Clement</h2>
       </div>
       <div className='hidden md:flex gap-x-10'>
-        <h3 className='cursor-pointer select-none ease-in duration-200 hover:text-cyan-600'>Accueil</h3>
-        <h3 className='cursor-pointer select-none ease-in duration-200 hover:text-cyan-600'>Le patient</h3>
-        <h3 className='cursor-pointer select-none ease-in duration-200 hover:text-cyan-600'>Analyse de la pratique</h3>
+        <Link className='cursor-pointer select-none ease-in duration-200 hover:text-cyan-600' to={'/'}>
+          Accueil
+        </Link>
+
+        <Link className='cursor-pointer select-none ease-in duration-200 hover:text-cyan-600' to={'/patient'}>
+          Le patient
+        </Link>
+
+        <Link className='cursor-pointer select-none ease-in duration-200 hover:text-cyan-600' to={'/analyse'}>
+          Analyse de la pratique
+        </Link>
       </div>
       <div className='flex md:hidden items-center'>
         <button onClick={toggleMenu} className='focus:outline-none'>
