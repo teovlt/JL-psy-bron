@@ -11,21 +11,21 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex justify-between bg-white select-none py-2 px-5 md:px-20 md:py-4'>
+    <div className='flex justify-between bg-primary select-none py-2 px-5 md:px-20 md:py-4'>
       <div className='flex items-center gap-x-2 cursor-pointer'>
         <img src={logo} alt='Logo' className='w-7 h-7' />
-        <h2>Jean-louis Clement</h2>
+        <h2 className='text-white'>Jean-louis Clement</h2>
       </div>
       <div className='hidden md:flex gap-x-10'>
-        <Link className='cursor-pointer select-none ease-in duration-200 hover:text-cyan-600' to={'/'}>
+        <Link className='cursor-pointer select-none ease-in duration-200 text-white ' to={'/'}>
           Accueil
         </Link>
 
-        <Link className='cursor-pointer select-none ease-in duration-200 hover:text-cyan-600' to={'/patient'}>
+        <Link className='cursor-pointer select-none ease-in duration-200 text-white' to={'/patient'}>
           Le patient
         </Link>
 
-        <Link className='cursor-pointer select-none ease-in duration-200 hover:text-cyan-600' to={'/analyse'}>
+        <Link className='cursor-pointer select-none ease-in duration-200 text-white' to={'/analyse'}>
           Analyse de la pratique
         </Link>
       </div>
@@ -35,21 +35,21 @@ const Navbar = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div className='absolute top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center md:hidden'>
+        <div className='absolute top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center md:hidden z-50 overflow-hidden'>
           <div>
-            <button onClick={toggleMenu} className='focus:outline-none bg-sky-800 p-2'>
+            <button onClick={toggleMenu} className='focus:outline-none bg-primary p-2'>
               <MdMenu className='w-6 h-6 text-white' />
             </button>
           </div>
-          <h3 className='select-none' onClick={toggleMenu}>
+          <Link className='cursor-pointer select-none ease-in duration-200' to={'/'} onClick={toggleMenu}>
             Accueil
-          </h3>
-          <h3 className='select-none ' onClick={toggleMenu}>
+          </Link>
+          <Link className='cursor-pointer select-none ease-in duration-200' to={'/patient'} onClick={toggleMenu}>
             Le patient
-          </h3>
-          <h3 className='select-none' onClick={toggleMenu}>
+          </Link>
+          <Link className='cursor-pointer select-none ease-in duration-200' to={'/analyse'} onClick={toggleMenu}>
             Analyse de la pratique
-          </h3>
+          </Link>
         </div>
       )}
     </div>
