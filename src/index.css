@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Pour Firefox */
+  html {
+    scrollbar-width: none; /* Masque la barre de défilement */
+    -ms-overflow-style: none; /* Masque la barre de défilement pour IE et Edge */
+  }
   :root {
-    overflow-y: hidden;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
