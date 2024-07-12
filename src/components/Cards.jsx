@@ -6,9 +6,9 @@ import card3 from '../assets/card3.svg'
 const Card = () => {
   return (
     <>
-      <section></section>
+      <section className='pt-10'></section>
       <section id='work'>
-        <h1>3 Etapes</h1>
+        <h1 className='text-center text-3xl uppercase tracking-wider'>Qui que vous soyez</h1>
 
         <div>
           <div>
