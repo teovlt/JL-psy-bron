@@ -1,19 +1,11 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.svg'
-import { MdMenu } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-import CustomNavLink from './CustomNavLink'
+import { FaPhoneVolume } from 'react-icons/fa'
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-    if (!isMenuOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'auto'
-    }
+  const call = () => {
+    window.open('tel:0682293504')
   }
 
   return (
@@ -24,12 +16,16 @@ const Navbar = () => {
           Jean-louis Clement
         </Link>
       </div>
-      <div className='hidden md:flex gap-x-10'>
-        <CustomNavLink label='Accueil' link='/' />
+      <div className='flex items-center gap-4 text-white'>
+        {/* <CustomNavLink label='Accueil' link='/' />
         <CustomNavLink label='Le patient' link='/patient' />
-        <CustomNavLink label='Analyse de la pratique' link='/analyse' />
+        <CustomNavLink label='Analyse de la pratique' link='/analyse' /> */}
+        <FaPhoneVolume />
+        <p className='hover:underline cursor-pointer' onClick={call}>
+          06 82 29 35 04
+        </p>
       </div>
-      <div className='flex md:hidden items-center'>
+      {/* <div className='flex md:hidden items-center'>
         <button onClick={toggleMenu} className='focus:outline-none'>
           <MdMenu className='w-8 h-8 text-white' />
         </button>
@@ -51,7 +47,7 @@ const Navbar = () => {
             Analyse de la pratique
           </Link>
         </div>
-      )}
+      )} */}
     </div>
   )
 }
