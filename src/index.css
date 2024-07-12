@@ -125,3 +125,11 @@ section:nth-of-type(2) > div > div > div:nth-child(1) > div hr {
   margin: 15px 0;
   opacity: 0.2;
 }
+
+.underline-animation {
+  width: 0;
+}
+
+.active .underline-animation {
+  width: 100%;
+}
