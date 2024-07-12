@@ -9,6 +9,11 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+    if (!isMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
   }
 
   return (
@@ -26,23 +31,23 @@ const Navbar = () => {
       </div>
       <div className='flex md:hidden items-center'>
         <button onClick={toggleMenu} className='focus:outline-none'>
-          <MdMenu className='w-8 h-8' />
+          <MdMenu className='w-8 h-8 text-white' />
         </button>
       </div>
       {isMenuOpen && (
-        <div className='absolute top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center md:hidden z-50 overflow-hidden'>
-          <div>
+        <div className='fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center z-50 overflow-hidden'>
+          <div className='absolute top-4 right-4'>
             <button onClick={toggleMenu} className='focus:outline-none bg-primary p-2'>
               <MdMenu className='w-6 h-6 text-white' />
             </button>
           </div>
-          <Link className='cursor-pointer select-none ease-in duration-200' to={'/'} onClick={toggleMenu}>
+          <Link className='cursor-pointer select-none ease-in duration-200 py-2' to={'/'} onClick={toggleMenu}>
             Accueil
           </Link>
-          <Link className='cursor-pointer select-none ease-in duration-200' to={'/patient'} onClick={toggleMenu}>
+          <Link className='cursor-pointer select-none ease-in duration-200 py-2' to={'/patient'} onClick={toggleMenu}>
             Le patient
           </Link>
-          <Link className='cursor-pointer select-none ease-in duration-200' to={'/analyse'} onClick={toggleMenu}>
+          <Link className='cursor-pointer select-none ease-in duration-200 py-2' to={'/analyse'} onClick={toggleMenu}>
             Analyse de la pratique
           </Link>
         </div>
