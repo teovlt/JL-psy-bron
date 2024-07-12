@@ -5,45 +5,67 @@ const Home = () => {
   return (
     <div id='top' className='max-w-full flex items-center flex-col py-10 md:mx-40'>
       <div className='px-4 md:px-20 '>
-        <h1 className='text-center text-3xl uppercase tracking-wider mb-8'>Je me présente</h1>
+        {/* <h1 className='text-center text-3xl uppercase tracking-wider mb-8'>Accueil</h1> */}
         <div className='flex flex-col md:flex-row items-center gap-8 md:gap-24  max-w-screen-lg mx-5'>
           <div className='text-justify'>
-            Psychologue, Psychothérapeute, <strong>Psychanalyste</strong> à <strong>Bron</strong> (Rhône, 69),{' '}
-            <strong>Jean-Louis Clément</strong> accueille <strong>Adultes, Adolescents</strong> et <strong>Couples</strong> sur rendez-vous.
+            Psychologue, Psychothérapeute, Psychanalyste à <strong>Bron</strong> (152 Avenue Franklin Roosevelt 69500), Jean-Louis Clément
+            accueille <strong>Adultes</strong>, <strong>Adolescents</strong> et <strong>Couples</strong> sur rendez-vous.
             <br />
-            Le psychologue intervient dans tous les domaines de la société (<strong>éducation, santé, social, travail, sport, etc.</strong>)
-            pour préserver, maintenir ou améliorer le <strong>bien-être</strong> ou la qualité de vie de l'individu et sa santé psychique,
-            développer ses capacités ou favoriser son intégration sociale.
-            <br />
-            Sur le site internet du cabinet de psychologie de Jean-Louis Clément à <strong>Bron (69500)</strong>, vous trouverez des
-            explications : le psychologue aide le patient à mieux se connaître, pour mieux avancer.
-            <h1 className='text-center text-3xl uppercase tracking-wider my-8'>Sujets abordés</h1>
+            Le psychologue intervient dans tous les domaines de la société (éducation, santé, social, travail, sport, etc.) pour préserver,
+            maintenir ou améliorer le bien-être ou la qualité de vie de l'individu et sa santé psychique, développer ses capacités ou
+            favoriser son intégration sociale.
+            <br /> <br />A la suite de l’écoute du couple dans un premier entretien, il peut être proposé : des rencontres régulières ou
+            ponctuelles ou une orientation vers d’autres soins ou organisme adapté.
+            <h1 className='text-center text-3xl uppercase tracking-wider my-8'>Motifs de consultations</h1>
             <p className='text-justify mb-4'>
-              Le psychologue Jean-Louis Clément est qualifié pour aborder un large éventail de sujets liés à la santé mentale et au
-              bien-être. Qu'il s'agisse de problèmes d'anxiété et d'angoisse, de souffrance au travail, de défis rencontrés pendant
-              l'adolescence, de thérapie de couple, de psychanalyse ou de psychothérapie, il offre un soutien professionnel et personnalisé
-              pour aider chaque individu à trouver des solutions et à améliorer sa qualité de vie.
+              On peut s’adresser à un psychologue simplement pour un avis ou par rapport à des difficultés personnelles ou à un
+              questionnement existentiel
             </p>
-            <ul className='list-disc pl-5 space-y-2 list-inside'>
-              <li className='text-primary'>
-                <span className='text-black'>Anxiété - Angoisse</span>
-              </li>
-              <li className='text-primary'>
-                <span className='text-black'>Burn out - Souffrance au Travail</span>
-              </li>
-              <li className='text-primary'>
-                <span className='text-black'>Adolescence</span>
-              </li>
-              <li className='text-primary'>
-                <span className='text-black'>La Thérapie de Couple</span>
-              </li>
-              <li className='text-primary'>
-                <span className='text-black'>Psychanalyse</span>
-              </li>
-              <li className='text-primary'>
-                <span className='text-black'>Psychothérapie</span>
-              </li>
-            </ul>
+            <div className='grid  items-center w-auto'>
+              <ul className='list-disc pl-5 space-y-2 list-inside max-w-96'>
+                <h3 className='text-primary font-bold'>Des difficultés liées à des vécus</h3>
+                <li className='text-primary'>
+                  <span className='text-black'>De dépression</span>
+                </li>
+                <li className='text-primary'>
+                  <span className='text-black'>D'anxiété</span>
+                </li>
+                <li className='text-primary'>
+                  <span className='text-black'>D'angoisse</span>
+                </li>
+                <li className='text-primary'>
+                  <span className='text-black'>De phobie</span>
+                </li>
+                <li className='text-primary'>
+                  <span className='text-black'>De perte de confiance en soi</span>
+                </li>
+                <li className='text-primary'>
+                  <span className='text-black'>De souffrance au travail</span>
+                </li>
+              </ul>
+              <br />
+              <ul className='list-disc pl-5 space-y-2 list-inside'>
+                <h3 className='text-primary font-bold'>Ou des questionnements existentiels personnels concernant</h3>
+                <li className='text-primary'>
+                  <span className='text-black'>L'identité</span>
+                </li>
+                <li className='text-primary'>
+                  <span className='text-black'>Le sens de la vie</span>
+                </li>
+              </ul>
+              <br />
+              <ul className='list-disc pl-5 space-y-2 list-inside'>
+                <h3 className='text-primary font-bold'>Des difficultés liées à des ressentis de troubles corporels</h3>
+                <li className='text-primary'>
+                  <span className='text-black'>De troubles corporels</span>
+                </li>
+                <li className='text-primary'>
+                  <span className='text-black'>
+                    de troubles de l’humeur ou de la pensée ou des problèmes de comportement ou d’addiction…
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
