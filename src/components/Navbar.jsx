@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from '../assets/logo.svg'
 import { MdMenu } from 'react-icons/md'
 import { Link } from 'react-router-dom'
+import CustomNavLink from './CustomNavLink'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -14,20 +15,14 @@ const Navbar = () => {
     <div className='flex justify-between bg-primary select-none py-2 px-5 md:px-20 md:py-4'>
       <div className='flex items-center gap-x-2 cursor-pointer'>
         <img src={logo} alt='Logo' className='w-7 h-7' />
-        <h2 className='text-white'>Jean-louis Clement</h2>
+        <Link className='text-white' to={'/'}>
+          Jean-louis Clement
+        </Link>
       </div>
       <div className='hidden md:flex gap-x-10'>
-        <Link className='cursor-pointer select-none ease-in duration-200 text-white ' to={'/'}>
-          Accueil
-        </Link>
-
-        <Link className='cursor-pointer select-none ease-in duration-200 text-white' to={'/patient'}>
-          Le patient
-        </Link>
-
-        <Link className='cursor-pointer select-none ease-in duration-200 text-white' to={'/analyse'}>
-          Analyse de la pratique
-        </Link>
+        <CustomNavLink label='Accueil' link='/' />
+        <CustomNavLink label='Le patient' link='/patient' />
+        <CustomNavLink label='Analyse de la pratique' link='/analyse' />
       </div>
       <div className='flex md:hidden items-center'>
         <button onClick={toggleMenu} className='focus:outline-none'>
