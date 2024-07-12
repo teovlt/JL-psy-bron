@@ -1,7 +1,7 @@
 import React from 'react'
-import card1 from '../assets/card1.jpg'
+import card1 from '../assets/card1.svg'
 import card2 from '../assets/card2.svg'
-import card3 from '../assets/card3.jpg'
+import card3 from '../assets/card3.svg'
 
 const Card = () => {
   return (
@@ -14,12 +14,12 @@ const Card = () => {
           <div>
             <div>
               <img src={card1} alt='card-hero-image' />
-              <h2>Reconnaître</h2>
+              <h2>Adolescents</h2>
               <div>
                 <hr />
                 <p>
-                  Identifier et comprendre vos problèmes est la première étape vers la guérison. Jean-louis est là pour vous aider à
-                  naviguer à travers les moments difficiles et à transformer la confusion et le stress en clarté et sérénité.
+                  Le psychologue aide les adolescents à comprendre et à gérer leurs émotions, à surmonter les défis scolaires et sociaux, et
+                  à naviguer dans cette période de transition avec confiance.
                 </p>
               </div>
             </div>
@@ -30,13 +30,14 @@ const Card = () => {
           <div>
             <div>
               <img src={card2} alt='card-hero-image' />
-              <h2>Communiquer</h2>
+              <h2>Adultes</h2>
               <div>
+                <br />
+                <br />
                 <hr />
                 <p>
-                  Parler de vos soucis avec un professionnel ou un proche est crucial pour avancer. Votre psychologue se dédie à vous
-                  accompagner pour surmonter le stress, l'anxiété et les défis émotionnels, afin de retrouver un équilibre mental et un
-                  bien-être durable.
+                  Pour les adultes, le psychologue offre un espace de soutien pour explorer les sources de stress et d'anxiété, améliorer
+                  les relations interpersonnelles, et développer des stratégies de gestion efficaces pour un bien-être mental durable.
                 </p>
               </div>
             </div>
@@ -47,12 +48,15 @@ const Card = () => {
           <div>
             <div>
               <img src={card3} alt='card-hero-image' />
-              <h2>S'en sortir</h2>
+              <h2>Couples</h2>
+              <br />
+              <br />
+              <br />
               <div>
                 <hr />
                 <p>
-                  Chez nous, nous croyons fermement que chaque défi mental peut être surmonté avec le bon soutien et les bonnes ressources.
-                  Ensemble, nous pouvons transformer les difficultés en opportunités de croissance et de bien-être.
+                  En tant que couple, vous pouvez bénéficier de l'accompagnement d'un psychologue pour améliorer la communication, renforcer
+                  la connexion émotionnelle, et résoudre les conflits de manière constructive afin de favoriser une relation harmonieuse.
                 </p>
               </div>
             </div>
