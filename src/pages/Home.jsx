@@ -17,7 +17,7 @@ const Home = () => {
             <br />
             Sur le site internet du cabinet de psychologie de Jean-Louis Clément à <strong>Bron (69500)</strong>, vous trouverez des
             explications : le psychologue aide le patient à mieux se connaître, pour mieux avancer.
-            <h1 className='text-center text-3xl uppercase tracking-wider mb-8'>Sujets abordés</h1>
+            <h1 className='text-center text-3xl uppercase tracking-wider my-8'>Sujets abordés</h1>
             <p className='text-justify mb-4'>
               Le psychologue Jean-Louis Clément est qualifié pour aborder un large éventail de sujets liés à la santé mentale et au
               bien-être. Qu'il s'agisse de problèmes d'anxiété et d'angoisse, de souffrance au travail, de défis rencontrés pendant
