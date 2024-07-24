@@ -14,7 +14,9 @@ const Navbar = () => {
       <div className='flex items-start flex-col gap-x-2 cursor-pointer'>
         <div className='flex items-center gap-x-4 cursor-pointer'>
           <img src={logo} alt='Logo' className='w-5 h-5' />
-          <Link to={'/'}>Jean-louis CLEMENT</Link>
+          <Link to={'/'} className='font-bold'>
+            Jean-louis CLEMENT
+          </Link>
         </div>
         <div className='flex items-center gap-4'>
           <FaLocationDot />

@@ -15,7 +15,8 @@ const Home = () => {
             <br />
             Il propose également aux professionnels de <strong>l'Analyse de la Pratique Professionnelle.</strong>
             <br />
-            On peut s’adresser à un psychologue simplement pour un avis ou par rapport à des difficultés diverses
+            <br />
+            <strong> On peut s’adresser à un psychologue </strong> simplement pour un avis ou par rapport à des difficultés diverses.
             <h1 className='pt-20 flex-initial p-2 text-center text-3xl uppercase tracking-wider underline underline-offset-3 decoration-primary'>
               Motifs de consultations
             </h1>
@@ -77,7 +78,7 @@ const Home = () => {
         A la suite de l'écoute du patient dans un ou des premiers entretiens, Jean Louis CLEMENT peut proposer des rencontres régulières
         (psychothérapie / psychalanyse) ou ponctuelles (entretiens) ou une orientation vers d'autres soins.
         <p>
-          Les <strong>adolescents</strong> ou les <strong>couples</strong> peuvent aussi consulter
+          Les <strong>adolescents</strong> ou les <strong>couples</strong> peuvent aussi consulter.
         </p>
       </div>
       <Cards />
