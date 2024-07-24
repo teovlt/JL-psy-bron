@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className='flex items-center gap-4 '>
         <FaPhoneVolume />
         <p className='hover:underline cursor-pointer' onClick={call}>
-          06 82 29 35 04 sur <strong>RV</strong>
+          06 82 29 35 04 sur <strong>RDV</strong>
         </p>
       </div>
     </div>
