@@ -76,7 +76,7 @@ const Home = () => {
 
       <div className='pt-10 text-justify w-auto mx-20'>
         A la suite de l'écoute du patient dans un ou des premiers entretiens, Jean Louis CLEMENT peut proposer des rencontres régulières
-        (psychothérapie / psychalanyse) ou ponctuelles (entretiens) ou une orientation vers d'autres soins.
+        (psychothérapie / psychanalyse) ou ponctuelles (entretiens) ou une orientation vers d'autres soins.
         <br />
         <br />
         <p>
