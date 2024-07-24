@@ -6,26 +6,20 @@ const Home = () => {
     <div id='top' className='max-w-full flex items-center flex-col py-10 md:mx-40'>
       <div className='px-4 md:px-20 '>
         <h1 className='pb-10 flex-initial p-2 text-center text-3xl uppercase tracking-wider underline underline-offset-3 decoration-primary'>
-          Entretiens - Psychothérapie, Analyse de la Pratique Professionnelle
+          Entretiens - Psychothérapie - Analyse de la Pratique Professionnelle
         </h1>
         <div className='flex flex-col md:flex-row items-center gap-8 md:gap-24 w-full-lg mx-5'>
           <div className='text-justify'>
             Psychologue, Psychothérapeute, Psychanalyste à <strong>Bron</strong> (152 Avenue Franklin Roosevelt 69500), Jean-Louis Clément
-            accueille <strong>Adultes</strong>, <strong>Adolescents</strong> et <strong>Couples</strong> sur rendez-vous au 06 82 29 35 04.{' '}
-            Il propose également aux professionnels de l'Analyse de la Pratique Professionnel
+            accueille <strong>Adultes</strong>, <strong>Adolescents</strong> et <strong>Couples</strong> sur rendez-vous au 06 82 29 35 04.
             <br />
-            Le psychologue intervient dans tous les domaines de la société (éducation, santé, social, travail, sport, etc.) pour préserver,
-            maintenir ou améliorer le bien-être ou la qualité de vie de l'individu et sa santé psychique, développer ses capacités ou
-            favoriser son intégration sociale.
-            <br /> <br />A la suite de l’écoute du couple dans un premier entretien, il peut être proposé : des rencontres régulières ou
-            ponctuelles ou une orientation vers d’autres soins ou organisme adapté.
+            Il propose également aux professionnels de <strong>l'Analyse de la Pratique Professionnelle.</strong>
+            <br />
+            On peut s’adresser à un psychologue simplement pour un avis ou par rapport à des difficultés diverses
             <h1 className='pt-20 flex-initial p-2 text-center text-3xl uppercase tracking-wider underline underline-offset-3 decoration-primary'>
               Motifs de consultations
             </h1>
-            <p className='text-justify mb-4 pt-10'>
-              On peut s’adresser à un psychologue simplement pour un avis ou par rapport à des difficulté s diverses
-            </p>
-            <div className='grid  items-center w-auto'>
+            <div className='grid pt-10 items-center w-auto'>
               <ul className='list-disc pl-5 space-y-2 list-inside max-w-96'>
                 <h3 className='text-primary font-bold'>Des difficultés liées à des vécus : </h3>
                 <li className='text-primary'>
@@ -50,9 +44,6 @@ const Home = () => {
                   <span className='text-black'>...</span>
                 </li>
               </ul>
-              <br />
-
-              <br />
               <ul className='list-disc pl-5 space-y-2 list-inside'>
                 <h3 className='text-primary font-bold'>Des difficultés liées à des ressentis : </h3>
                 <li className='text-primary'>
@@ -82,11 +73,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=' pt-10 flex flex-col md:flex-row items-center gap-8 md:gap-24  max-w-screen-lg text-justify mx-5'>
+      <div className='pt-10 text-justify w-auto mx-20'>
         A la suite de l'écoute du patient dans un ou des premiers entretiens, Jean Louis CLEMENT peut proposer des rencontres régulières
         (psychothérapie / psychalanyse) ou ponctuelles (entretiens) ou une orientation vers d'autres soins.
-        <br />
-        Les adolescents ou les couples peuvent aussi consulter
+        <p>
+          Les <strong>adolescents</strong> ou les <strong>couples</strong> peuvent aussi consulter
+        </p>
       </div>
       <Cards />
       <div className='flex flex-wrap items-center flex-col pt-20 w-full'>

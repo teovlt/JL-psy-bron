@@ -7,9 +7,9 @@ const Card = () => {
     <>
       <section className='pt-20'></section>
       <section id='work'>
-        <h1 className='pb-10 flex-initial p-2 text-center text-3xl uppercase tracking-wider underline underline-offset-3 decoration-primary'>
+        {/* <h1 className='pb-10 flex-initial p-2 text-center text-3xl uppercase tracking-wider underline underline-offset-3 decoration-primary'>
           Le patient
-        </h1>
+        </h1> */}
         <div className='card-container flex justify-center items-center mr-20'>
           <div className='card h-520 w-400 perspective-1000'>
             <div className='card-content text-center transform-style-preserve-3d transition-transform duration-800'>

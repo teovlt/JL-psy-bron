@@ -30,13 +30,13 @@ const Navbar = () => {
       </div>
       <div className='flex items-center'>
         <strong>
-          <h1 className='text-3xl'>Psychologue psychothérapeute</h1>
+          <h1 className='text-3xl'>Psychologue-psychothérapeute</h1>
         </strong>
       </div>
       <div className='flex items-center gap-4 '>
         <FaPhoneVolume />
         <p className='hover:underline cursor-pointer' onClick={call}>
-          06 82 29 35 04
+          06 82 29 35 04 sur <strong>RV</strong>
         </p>
       </div>
     </div>
