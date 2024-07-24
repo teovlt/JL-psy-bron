@@ -5,25 +5,29 @@ const Home = () => {
   return (
     <div id='top' className='max-w-full flex items-center flex-col py-10 md:mx-40'>
       <div className='px-4 md:px-20 '>
-        {/* <h1 className='text-center text-3xl uppercase tracking-wider mb-8'>Accueil</h1> */}
-        <div className='flex flex-col md:flex-row items-center gap-8 md:gap-24  max-w-screen-lg mx-5'>
+        <h1 className='pb-10 flex-initial p-2 text-center text-3xl uppercase tracking-wider underline underline-offset-3 decoration-primary'>
+          Entretiens - Psychothérapie, Analyse de la Pratique Professionnelle
+        </h1>
+        <div className='flex flex-col md:flex-row items-center gap-8 md:gap-24 w-full-lg mx-5'>
           <div className='text-justify'>
             Psychologue, Psychothérapeute, Psychanalyste à <strong>Bron</strong> (152 Avenue Franklin Roosevelt 69500), Jean-Louis Clément
-            accueille <strong>Adultes</strong>, <strong>Adolescents</strong> et <strong>Couples</strong> sur rendez-vous.
+            accueille <strong>Adultes</strong>, <strong>Adolescents</strong> et <strong>Couples</strong> sur rendez-vous au 06 82 29 35 04.{' '}
+            Il propose également aux professionnels de l'Analyse de la Pratique Professionnel
             <br />
             Le psychologue intervient dans tous les domaines de la société (éducation, santé, social, travail, sport, etc.) pour préserver,
             maintenir ou améliorer le bien-être ou la qualité de vie de l'individu et sa santé psychique, développer ses capacités ou
             favoriser son intégration sociale.
             <br /> <br />A la suite de l’écoute du couple dans un premier entretien, il peut être proposé : des rencontres régulières ou
             ponctuelles ou une orientation vers d’autres soins ou organisme adapté.
-            <h1 className='text-center text-3xl uppercase tracking-wider my-8'>Motifs de consultations</h1>
-            <p className='text-justify mb-4'>
-              On peut s’adresser à un psychologue simplement pour un avis ou par rapport à des difficultés personnelles ou à un
-              questionnement existentiel
+            <h1 className='pt-20 flex-initial p-2 text-center text-3xl uppercase tracking-wider underline underline-offset-3 decoration-primary'>
+              Motifs de consultations
+            </h1>
+            <p className='text-justify mb-4 pt-10'>
+              On peut s’adresser à un psychologue simplement pour un avis ou par rapport à des difficulté s diverses
             </p>
             <div className='grid  items-center w-auto'>
               <ul className='list-disc pl-5 space-y-2 list-inside max-w-96'>
-                <h3 className='text-primary font-bold'>Des difficultés liées à des vécus</h3>
+                <h3 className='text-primary font-bold'>Des difficultés liées à des vécus : </h3>
                 <li className='text-primary'>
                   <span className='text-black'>De dépression</span>
                 </li>
@@ -42,37 +46,54 @@ const Home = () => {
                 <li className='text-primary'>
                   <span className='text-black'>De souffrance au travail</span>
                 </li>
+                <li className='text-primary'>
+                  <span className='text-black'>...</span>
+                </li>
               </ul>
               <br />
+
+              <br />
               <ul className='list-disc pl-5 space-y-2 list-inside'>
-                <h3 className='text-primary font-bold'>Ou des questionnements existentiels personnels concernant</h3>
+                <h3 className='text-primary font-bold'>Des difficultés liées à des ressentis : </h3>
+                <li className='text-primary'>
+                  <span className='text-black'>Des troubles corporels</span>
+                </li>
+                <li className='text-primary'>
+                  <span className='text-black'>Des problèmes de comportement ou d’addiction…</span>
+                </li>
+                <li className='text-primary'>
+                  <span className='text-black'>...</span>
+                </li>
+              </ul>
+              <ul className='list-disc pl-5 space-y-2 list-inside'>
+                <h3 className='text-primary font-bold'>Des questionnements existentiels concernant :</h3>
                 <li className='text-primary'>
                   <span className='text-black'>L'identité</span>
                 </li>
                 <li className='text-primary'>
                   <span className='text-black'>Le sens de la vie</span>
                 </li>
-              </ul>
-              <br />
-              <ul className='list-disc pl-5 space-y-2 list-inside'>
-                <h3 className='text-primary font-bold'>Des difficultés liées à des ressentis de troubles corporels</h3>
                 <li className='text-primary'>
-                  <span className='text-black'>De troubles corporels</span>
-                </li>
-                <li className='text-primary'>
-                  <span className='text-black'>
-                    de troubles de l’humeur ou de la pensée ou des problèmes de comportement ou d’addiction…
-                  </span>
+                  <span className='text-black'>...</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
+      <div className=' pt-10 flex flex-col md:flex-row items-center gap-8 md:gap-24  max-w-screen-lg text-justify mx-5'>
+        A la suite de l'écoute du patient dans un ou des premiers entretiens, Jean Louis CLEMENT peut proposer des rencontres régulières
+        (psychothérapie / psychalanyse) ou ponctuelles (entretiens) ou une orientation vers d'autres soins.
+        <br />
+        Les adolescents ou les couples peuvent aussi consulter
+      </div>
       <Cards />
       <div className='flex flex-wrap items-center flex-col pt-20 w-full'>
-        <h1 className='flex-initial w-full text-center text-3xl uppercase tracking-wider pb-20'>Analyse de la Pratique Professionnelle</h1>
-        <div className='flex flex-col md:flex-row items-center gap-8 md:gap-24  max-w-screen-lg text-justify mx-5'>
+        <h1 className='flex-initial p-2 text-center text-3xl uppercase tracking-wider underline underline-offset-3 decoration-primary'>
+          Analyse de la Pratique Professionnelle
+        </h1>
+        <div className=' pt-10 flex flex-col md:flex-row items-center gap-8 md:gap-24  max-w-screen-lg text-justify mx-5'>
           Elle peut être individuelle ou groupale. Je la nomme personnellement Elaboration de la pratique professionnelle pour souligner
           qu’il ne s’agit pas principalement d’une transmission de savoirs mais d’un travail de mise en mots, d’échange et d’élaboration
           progressive accompagné par le groupe (si c’est dans ce cadre) et le psychologue. <br /> <br /> Elle concerne les professionnels

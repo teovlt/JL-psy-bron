@@ -13,7 +13,7 @@
     -ms-overflow-style: none; /* Masque la barre de défilement pour IE et Edge */
   }
   :root {
-    --primary: 210, 50%, 50%, 0.8;
+    --primary: 197, 100%, 50%, 0.8;
   }
 }
 
@@ -31,7 +31,6 @@ section:nth-of-type(2) {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 75px;
 }
 
 section:nth-of-type(2) > h1 {
@@ -100,10 +99,9 @@ section:nth-of-type(2) > div img {
 section:nth-of-type(2) > div > div > div:nth-child(1) h2 {
   position: absolute;
   top: 215px;
-  right: 25px;
   font-weight: normal;
   font-size: 20px;
-  background-color: #4080bfcc;
+  background-color: #00b7ffcc;
   color: white;
   padding: 10px;
   font-style: italic;
